@@ -118,16 +118,15 @@ int words_program() {
         }
 
         if (choice == 1) {
+            string input, line;
             cin.ignore();
-            char text[8192];
-            cout << "Enter the text: ";
-            cin.getline(text, sizeof(text));
-
-            if (cin.fail()) {
-                throw overflow_error("Error: Exceeded maximum text length.");
+            while (true) {
+                getline(cin, line);
+                if (line.empty())
+                    break; 
+                input += line + '\n';
             }
-
-            SentenceFilter filter(text, true);
+            SentenceFilter filter(input, true);
             filter.result();
         } else if (choice == 2) {
             char filename[256];
