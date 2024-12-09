@@ -3,7 +3,8 @@
     "new": "cpp",
     "string": "cpp",
     "stdexcept": "cpp",
-    "iostream": "cpp"
+    "iostream": "cpp",
+    "limits": "cpp"
   },
   "C_Cpp_Runner.cCompilerPath": "gcc",
   "C_Cpp_Runner.cppCompilerPath": "g++",

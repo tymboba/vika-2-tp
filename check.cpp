@@ -7,7 +7,7 @@ int check_input() {
         if (cin.fail()) {
             cin.clear();
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
-            cout << "Некорректный ввод! Пожалуйста, введите число: " << endl;
+            cout << "Invalid input! Please enter a number: " << endl;
         } else {
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
             return value;
